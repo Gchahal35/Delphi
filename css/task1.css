@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #000;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,72,115,0.8122332859174964) 45%, rgba(0,212,255,1) 100%);
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 90vw;
+    max-width: 500px;
+    background-color: #cecece;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas:
+        "header header header header"
+        "display display display display";
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 18px minmax(100px, auto) repeat(5, minmax(0, 60px));
+}
+
+.heading {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+.heading > h1 {
+	padding-top: 20px;
+	padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.display {
+    grid-area: display;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.previousvalue {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1rem;
+}
+
+.currentvalue {
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-family: "Roboto Mono", monospace;
+}
+
+button {
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+button:hover,
+button:active {
+    background: #d4d9db;
+}
+
+.equals {
+    background: #80d6f1;
+}
+
+.equals:hover,
+.equals:active {
+    background: #80d6f1;
+}

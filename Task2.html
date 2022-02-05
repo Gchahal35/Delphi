@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delphi Tech Corp Front-End Development Team Coding Test</title>
+    <link rel="stylesheet" href="css/task2.css">
+    <script src="js/task2.js"></script>
+    <script type="text/javascript">
+      function GetDateTimeFunction() {
+        var DateTime = new Date();
+        $('#divDateTime').html(DateTime);
+      }
+      $(document).ready(function (){
+        setInterval(GetDateTimeFunction, 1000);
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form id="form1" method="post" action="#">
+      <div id="divDateTime">
+        
+      </div>
+   </form>
+    <div>
+      <div>
+        <h1>Group 1 - Alan Zheng's Companys + Products </h1>
+        <details>
+          <summary>VRCity</summary>
+          <p> Our mission is to inpire the next generation of aeronautics professionals. Our Founders are all from the aviation training sector, we have the vision to progress the Aviation & Aerospace industry Next Generation Aviation Professionals (NGAP) pathway, which is mostly competency-based and to promote Aviation & Aerospace from elementary to High Schools under STEM programs.</p>
+          <a href="https://vrcity.ca/">vrcity.ca</a><br/>
+        </details> <br/>
+        <details>
+          <summary>Delphi Technology Corp</summary>
+          <p> Delphi Technology Corp was founded by Alan and Mike, who were two former air force colleagues. They aim to incorporate interactive
+          aviation training into STEM programs, and raise awareness of aviation professions.</p>
+          <a href="https://delphitechcorp.com/">delphitechcorp.com</a><br/>
+        </details> <br/>
+        <details>
+          <summary>Aurora Aerial</summary>
+          <p> Aurora Aerial is a Canadian custom drone manufacturing solution that develops hardware and software technology.  Our drone system reliably carries the heaviest time-sensitive payload the furthest distance in the industry, resulting in reduced costs and a better delivery experience. </p>
+          <a href="https://www.auroraaerial.aero/">auroraaerial.aero</a><br/>
+        </details> <br/>
+      </div>
+
+      <div class="group2">
+        <h1>Group 2 - Technology products used at Delphi </h1>
+        <a href="https://virbela.com/">Virbela<img src="https://assets-global.website-files.com/5f50f7cde6ed0e3e54c7fb94/5fab9393da4ffe1e20d14cc6_virbela-logo-black-website.png"></a><br/>
+        <a href="https://amazon.com/">Amazon<img src="https://cpng.pikpng.com/pngl/s/103-1037301_amazon-logo-copy-transparent-background-company-logos-clipart.png"></a><br/>
+        <a href="https://moodle.org/">Moodle<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Moodle-logo.svg/2560px-Moodle-logo.svg.png"></a><br/>
+        <a href="https://x-plane.com/">X-plane<img src="https://developer.x-plane.com/wp-content/uploads/2017/12/cropped-X.png"></a><br/>
+        <a href="https://wordpress.org/">Wordpress<img src="https://s.w.org/style/images/about/WordPress-logotype-wmark.png"></a><br/>
+      </div>
+
+      <div>
+        <h1>Group 3 - Websites used at Delphi </h1>
+        <button onclick="myFunction()"> Show or hide </button>
+        <div id="myDIV">
+          <a href="https://github.com/">Github</a><br/>
+          <a href="https://meet.google.com">Google Meet</a><br/>
+          <a href="https://slack.com">Slack</a><br/>
+          <a href="https://wrike.com">Wrike</a><br/>
+        </div>
+      </div>
+      
+      <div>
+        <h1>Group 4 - Aerospace Companies </h1>
+          <a href="https://www.airbus.com/en" >Airbus</a><br/>
+          <a href="https://www.boeing.com/" > Boeing </a><br/>
+          <a href="https://www.lockheedmartin.com/en-us/index.html" >Lockheedmartin</a><br/>
+          <a href="https://www.rtx.com/" >RTX</a><br/>
+          <a href="https://www.geaviation.com/" >Geaviation</a><br/>
+          <a href="https://www.safran-group.com/" >Safran</a><br/>
+          <a href="https://www.leonardo.com/en/home" >Leonardo</a><br/>
+          <a href="https://www.baesystems.com/en/home" >Baesystems</a><br/>
+      </div>
+    </div>
+  </body>
+</html>
